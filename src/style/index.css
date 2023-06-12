@@ -1,0 +1,166 @@
+@import './reset.css';
+
+:root {
+  --app-dark:          #070423                   ;
+  --app-header-color:  #dd5730                   ;
+  --app-light:         #f7f7f7                   ;
+  --app-footer-color:  #b2b2b2                   ;
+  --app-dark-text:     #303030                   ;
+  --app-blue:          #408dff                   ;
+  --app-blue-hover:    #397bde                   ;
+
+  --app-header-height: 70px                        ;
+  --app-footer-height: 112px                       ;
+  --app-border-radius: 6px                         ;
+}
+
+body { background-color: #c6c6c6;}
+
+.container {
+  width:               min(100% - 30px, 1280px)    ;
+  margin-inline:       auto                        ;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* header */
+
+header {
+  background-color: var(--app-header-color);
+  height: var(--app-header-height);
+  line-height: var(--app-header-height);  
+  color: var(--app-light);
+}
+
+header h1 {
+  width: 50%;
+  letter-spacing: 0.5px;
+}
+
+header nav {
+  width: 50%;
+}
+
+header nav ul {
+  list-style: none;
+  gap: 20px;
+  justify-content: right;
+  width: 100%;
+}
+header nav ul li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+header nav ul li {
+  letter-spacing: 0.5px;
+}
+
+/* Banner */
+
+.banner {
+  height: 50vh;
+  background-color: #ffffff;
+  color: var(--app-dark-text);
+}
+
+.banner .container {
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100%;
+}
+.banner .flex {
+  justify-content: center;
+}
+
+.banner .text {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.banner .text p {
+  width: 50%;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.banner .text h2 {
+  width: 100%;
+  text-align: center;
+}
+
+.buttons {
+  margin-top: 40px;
+  gap: 20px;
+}
+
+button {
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.primary {
+  background-color: var(--app-blue);
+  color: var(--app-light);
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  box-shadow: 1px 1px 5px 1px rgba(38, 38, 38, 0.411);
+}
+.primary:hover {
+  background-color: var(--app-blue-hover);
+}
+
+.secondary {
+  font-weight: 500;
+  background-color: transparent;
+  border: 1px solid var(--app-blue);
+  color: var(--app-blue);
+}
+.secondary:hover {
+  background-color: #ededed;
+}
+
+/* gallery */
+
+.gallery {
+  justify-content: center;
+  gap: 5%;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.gallery img {
+  width: 20%;
+  border-radius: 5px;
+  box-shadow: 1px 2px 4px 0px rgba(49, 49, 49, 0.541);
+}
+
+/* Footer */
+
+footer {
+  color: var(--app-dark-text);
+  background-color: var(--app-footer-color);
+  height: 140px;
+  box-shadow: -1px 0px 4px 0px #3d3d3d6f;
+}
+
+footer > div {
+  align-items: center;
+  height: 100%;
+}
+
+footer div div {
+  width: 33%;
+}
+
+.description {
+  text-align: center;
+}
+
+.copyright {
+  text-align: right;
+}
