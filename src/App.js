@@ -11,7 +11,7 @@ function App() {
     <>
     <Header />
       <Routes>
-        <Route exact path='/' element={ <Home /> } />
+        <Route exact path='/pages-react' element={ <Home /> } />
         <Route exact path='/documentation' element={ <Documentation /> } />
         <Route exact path='/tutorials' element={ <Tutorial /> } />
         <Route exact path='/aboutus' element={ <AboutUs />} />
