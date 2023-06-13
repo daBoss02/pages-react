@@ -4,7 +4,7 @@ function Home() {
   return (
     <div className="container">
       <h2>Intro to React</h2>
-      <p><Link to="/tutorial">Tutorials</Link></p>
+      <p><Link to="/tutorials">Tutorials</Link></p>
       <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
       minim  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
