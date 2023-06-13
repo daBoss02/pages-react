@@ -12,9 +12,9 @@ function App() {
     <Header />
       <Routes>
         <Route exact path='/pages-react' element={ <Home /> } />
-        <Route exact path='/documentation' element={ <Documentation /> } />
-        <Route exact path='/tutorials' element={ <Tutorial /> } />
-        <Route exact path='/aboutus' element={ <AboutUs />} />
+        <Route exact path='/pages-react/documentation' element={ <Documentation /> } />
+        <Route exact path='/pages-react/tutorials' element={ <Tutorial /> } />
+        <Route exact path='/pages-react/aboutus' element={ <AboutUs />} />
       </Routes>
     </>
   );

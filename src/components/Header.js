@@ -21,10 +21,10 @@ function Header() {
               <Link to="/pages-react">Home</Link>
             </li>
             <li>
-              <Link to="/aboutus">About Us</Link>
+              <Link to="/pages-react/aboutus">About Us</Link>
             </li>
             <li>
-              <NavLink to="/tutorials"
+              <NavLink to="/pages-react/tutorials"
                 className={navData => (navData.isActive ? "active" : "")}
               >Tutorials</NavLink>
             </li>
